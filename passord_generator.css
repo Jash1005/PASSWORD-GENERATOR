@@ -1,0 +1,114 @@
+*{
+   font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-color: #002339;
+    color: white;
+}
+
+.container {
+    margin :  3%;
+    width: 54%;
+    padding: 5%;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+
+    span {
+        color:#019f55;
+        border-bottom: 4px solid #019f55;
+    }
+}
+
+.password-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+     border-radius: 5px;
+     padding: 26px 20px;
+}
+
+.password-box img {
+    width:30px;
+    cursor : pointer;
+}
+
+.password-box input {
+    border: none;
+    font-size: 24;
+    height: 100%;
+    outline: none;  // after clicking no black border appears
+}
+
+.generate-button {
+    display: flex;
+    margin-top: 30px;
+    background-color: #019f55;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 13px;
+}
+
+.button {
+    color : white;
+    background-color: #019f55;
+    border: none;
+    outline: none;
+}
+
+.generate-button img {
+    width: 20px;
+}
+
+
+.custom-alert {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    justify-items: end;
+}
+
+@media (max-width : 530px) {
+    .container {
+        width : 70%;
+         
+       h1 {
+           font-weight: 500;
+           font-size: 39px;
+       }
+    }
+
+    .button {
+        font-size: 12px;
+    }
+
+    .generate-button img {
+        width: 15px;
+    }
+}
+
+@media (max-width : 430px) {
+    .container {
+        width : 70%;
+
+        h1 {
+            font-weight: 400;
+            font-size: 35px;
+        }
+    }
+
+    .generate-button {
+        gap: 8px;
+    }
+}
